@@ -1,3 +1,4 @@
 *.FCBak
 *.gcode
 backup_*
+*cache
