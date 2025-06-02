@@ -2,3 +2,4 @@
 *.gcode
 backup_*
 *cache
+*.lck
