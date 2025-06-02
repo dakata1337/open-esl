@@ -1,3 +1,5 @@
 *.FCBak
 *.gcode
 backup_*
+*cache
+*.lck
