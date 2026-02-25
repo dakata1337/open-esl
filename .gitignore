@@ -3,3 +3,4 @@
 backup_*
 *cache
 *.lck
+*.stl
