@@ -4,3 +4,5 @@ backup_*
 *cache
 *.lck
 *.stl
+*.obj
+*.pdf
