@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "1495eec9-70a9-4ebf-8286-8409dbfa864b")
+	(uuid "f4431aee-b232-4205-b25a-cd690a77edaa")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:Conn_01x01_Pin"
@@ -231,102 +231,36 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 91.44) (xy 102.87 96.52)
+			(xy 76.2 95.25) (xy 76.2 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2dd76093-a9be-477e-a2c8-06086b4e978e")
+		(uuid "4b254a88-39ad-405d-84e4-973ff3b93313")
 	)
 	(wire
 		(pts
-			(xy 100.33 91.44) (xy 102.87 91.44)
+			(xy 74.93 95.25) (xy 76.2 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e13c3b99-8f48-4d48-bee2-7b041b2d6f74")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 102.87 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b163dfba-6824-4da2-b563-dbbc406b556b")
-		(property "Reference" "#PWR01"
-			(at 102.87 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 102.87 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85946335-9160-47ca-90fa-b614240ddd4a")
-		)
-		(instances
-			(project ""
-				(path "/1495eec9-70a9-4ebf-8286-8409dbfa864b"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "6b1e22ab-5036-4394-a4b0-219003bc50b5")
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 95.25 91.44 0)
+		(at 69.85 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dac7c2d4-4033-4a2e-b4b5-9a40cbf70bf2")
+		(uuid "0e30d71f-4ed8-4208-b32d-7a39886e4d10")
 		(property "Reference" "J1"
-			(at 95.885 86.36 0)
+			(at 70.485 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -334,15 +268,15 @@
 			)
 		)
 		(property "Value" "Conn_01x01_Pin"
-			(at 95.885 88.9 0)
+			(at 70.485 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_3x6mm"
-			(at 95.25 91.44 0)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+			(at 69.85 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -351,7 +285,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.25 91.44 0)
+			(at 69.85 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -360,7 +294,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 95.25 91.44 0)
+			(at 69.85 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -369,12 +303,78 @@
 			)
 		)
 		(pin "1"
-			(uuid "a9b74805-84e9-435d-b4ee-335c117a3710")
+			(uuid "e05d4e59-d92c-47dd-84e3-28b8e83e3400")
 		)
 		(instances
 			(project ""
-				(path "/1495eec9-70a9-4ebf-8286-8409dbfa864b"
+				(path "/f4431aee-b232-4205-b25a-cd690a77edaa"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83390d32-cd79-456d-8e32-e3aed0a17990")
+		(property "Reference" "#PWR01"
+			(at 76.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02163d5a-d70a-43b8-a3c0-52f5c6156791")
+		)
+		(instances
+			(project ""
+				(path "/f4431aee-b232-4205-b25a-cd690a77edaa"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
