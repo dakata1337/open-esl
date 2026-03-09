@@ -28,8 +28,19 @@ for proj in "${PROJECTS[@]}"; do
     rm -rf "$OUTDIR"
     mkdir -p "$OUTDIR"
 
-    echo "Generating Gerbers..."
-    kicad-cli pcb export gerbers "$PCB_FILE" --output "$OUTDIR"
+    if [ "$proj" = "pcb-spacer" ]; then
+        echo "Generating Gerbers (NO TOP SOLDERMASK)..."
+
+        kicad-cli pcb export gerbers "$PCB_FILE" \
+            --layers "F.Cu,B.Cu,B.Mask,F.SilkS,B.SilkS,Edge.Cuts" \
+            --output "$OUTDIR"
+
+    else
+        echo "Generating standard Gerbers..."
+
+        kicad-cli pcb export gerbers "$PCB_FILE" \
+            --output "$OUTDIR"
+    fi
 
     echo "Generating drill files..."
     kicad-cli pcb export drill "$PCB_FILE" --output "$OUTDIR"
@@ -39,10 +50,12 @@ for proj in "${PROJECTS[@]}"; do
     echo "Creating zip archive $ZIP_NAME..."
     (
         cd "$OUTDIR"
-        zip -r "../$ZIP_NAME" .
+        zip -r "../h1-$ZIP_NAME" .
     )
 
     echo "Archive created: $proj/$ZIP_NAME"
 
     popd > /dev/null
 done
+
+echo "=== All projects processed ==="
