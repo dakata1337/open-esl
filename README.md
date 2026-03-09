@@ -1,5 +1,6 @@
 # open-esl
 This project aims to create an entirely open source DIY electrostatic headphones.
+[Licensed under GPL 2](LICENSE)
 
 ## H1 (WIP)
 H1 is an improved version of the Jade II Clone. Main improvements are:
