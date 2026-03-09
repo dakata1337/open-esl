@@ -10,6 +10,7 @@ H1 is an improved version of the Jade II Clone. Main improvements are:
 
 <img src="./h1/media/cad_preview.png" width="466" height="532">
 <img src="./h1/media/stator_cad_preview.png" width="466" height="559">
+<img src="./h1/media/spacer_cad_preview.png" width="466" height="559">
 
 ## Jade II Clone
 <img src="./jade-ii/media/final-result.png" width="466" height="532">
