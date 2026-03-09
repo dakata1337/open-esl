@@ -503,7 +503,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "pcb-spacer.step",
+      "step": "pcb-spacer.stl",
       "svg": "",
       "vrml": ""
     },
