@@ -28,19 +28,7 @@ for proj in "${PROJECTS[@]}"; do
     rm -rf "$OUTDIR"
     mkdir -p "$OUTDIR"
 
-    if [ "$proj" = "pcb-spacer" ]; then
-        echo "Generating Gerbers (NO TOP SOLDERMASK)..."
-
-        kicad-cli pcb export gerbers "$PCB_FILE" \
-            --layers "F.Cu,B.Cu,B.Mask,F.SilkS,B.SilkS,Edge.Cuts" \
-            --output "$OUTDIR"
-
-    else
-        echo "Generating standard Gerbers..."
-
-        kicad-cli pcb export gerbers "$PCB_FILE" \
-            --output "$OUTDIR"
-    fi
+    kicad-cli pcb export gerbers "$PCB_FILE" --output "$OUTDIR"
 
     echo "Generating drill files..."
     kicad-cli pcb export drill "$PCB_FILE" --output "$OUTDIR"
