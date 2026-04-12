@@ -3,21 +3,19 @@
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 [![GitHub repo](https://img.shields.io/badge/GitHub-dakata1337/open--esl-181717?style=flat&logo=github)](https://github.com/dakata1337/open-esl)
 
-**Fully open-source electrostatic headphones** — designed from the ground up for DIY builders who want high-end sound without proprietary parts.
-
 ---
 
 ## H1 — Latest Revision (WIP)
 
-**H1** is the current flagship design — a major upgrade over the Jade II clone.
+**H1** is the most recent design — a major upgrade over the Jade II clone.
 
 ### Key Improvements
 | Feature                          | H1 (New)                          | Jade II Clone                  |
 |----------------------------------|-----------------------------------|--------------------------------|
 | Connector                        | Detachable mini-XLR               | Hard-wired                     |
 | Earpad mounting                  | Tool-less, secure clip system     | Basic adhesive/glue            |
-| Transducer-to-earcup mount       | New quick-release mechanism       | Fixed screws                   |
-| Rear grill                       | Integrated + optional SS mesh     | None                           |
+| Transducer-to-earcup mount       | Press fitted by earpad clip       | Fixed screws                   |
+| Rear grill                       | Integrated + option for a SS mesh | None                           |
 | Overall serviceability           | Highly modular                    | Low                            |
 
 ### Project Structure
@@ -36,8 +34,8 @@ h1/
 │   ├── pcb-spacer.kicad_sch
 │   ├── pcb-spacer.kicad_pcb
 │   └── h1-pcb-spacer-gerbers.zip
-├── media/                    ← Renders, assembly photos & exploded views
-└── jade-ii/                  ← Legacy version
+└── media/                    ← Renders, assembly photos & exploded views
+jade-ii/                      ← Legacy version
 ```
 **Everything you need to manufacture H1 is inside the `h1/` folder.**
 
